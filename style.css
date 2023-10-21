@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Foldit&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+body{
+    background-color: #000;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Belanosima', sans-serif;
+}
+nav{
+    background-color: hotpink;
+    height: 75px;
+    width: 100vw;
+    
+    padding: 0px 12px;
+    
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    transform: translateY(50%);
+}
+
+nav ul{
+   
+    
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 42vw;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.reload i{
+    font-size: 33px;
+}
+.gameContainer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4.2vw;
+    flex-wrap: wrap;
+   
+}
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,12.5vw);
+    grid-template-columns: repeat(3,12.5vw);
+    justify-content: center;;
+    
+}
+.box{
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 10vw;
+    color: #333333;
+    cursor: pointer;
+}
+.br-0{
+    border-right: 0;
+}
+.bl-0{
+    border-left: 0;
+}
+.bb-0{
+    border-bottom:0 ;
+}
+
+.user-icon{
+    font-size: 2vw;
+}
+.info{
+    font-size: 2vw;
+}
+.gameinfo h1{
+    margin-bottom: 2vw;
+}
+.wincount{
+    margin-top: 2vw;
+    display: flex;
+    gap: 6vw;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 425px) {
+    .gameContainer{
+        align-content: space-around;
+    }
+    
+}
